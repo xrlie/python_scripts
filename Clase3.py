@@ -98,6 +98,7 @@ x[1:len(x):] #del elemento 1 al len(x) - 1
 
 x[len(x) - 1] #último elemento
 x[-1] #último elemento
-x[len(x) - 1 :]
+x[len(x) - 1 :len(x)] #último elemento
+x[::-1][0] #último elemento
 
 ### for en listas
