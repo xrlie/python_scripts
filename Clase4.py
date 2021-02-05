@@ -20,7 +20,7 @@ x = [i if i % 2 == 0 else "No es par" for i in range(100) ]
 # a la lista anterior sumarle 1 a los números enteros
 [i + 1 for i in x if isinstance(i,int)]
 [i + 1 for i in x if i % 2 == 0] # error por tratar de usar módulo con un str
-[x[i] + 1 for in range(len(x)) if i % 2 == 0]
+[x[i] + 1 for i in range(len(x)) if i % 2 == 0]
 
 [i + 1 if isinstance(i, int) else x[i] for i in x] #error
 [i + 1 if isinstance(i, int) else i for i in x]
