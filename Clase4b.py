@@ -71,7 +71,6 @@ print("Si multiplicamos la cadena uno por 5, se imprime 5 veces: \n" + (cadena_u
 # print(cadena.format(otro_nombre))
 # print((cadena.format(nombre).split(" ")))
 
-### Aplicar 2 operaciones con bool
 
 ### Crear una lista (l_nombres) con los nombres de 5 compañeros
 l_nombres = ["Ale Paez", "Gabriela Camarillo", "Emmanuel Cianca", "Gilberto García", "Liliana Juárez"]
@@ -99,3 +98,63 @@ l_mas_horas = [l_nombres[i] for i in range(len(l_nombres)) if l_horas[i] > 8]
 ### Seleccionar cuales compañeros duermen menos de 8 horas
 l_menos_horas = [l_nombres[i] if l_dato[i] < 4 else f"{l_nombres[i]} es vampiro" for i in range(len(l_nombres)) if l_horas[i] < 8]
 
+
+### Aplicar 2 operaciones con bool
+# < menor que
+# > mayor que
+# >= mayor o igual que
+# <= menor o igual que
+
+# and, &
+# or, |
+
+# True & True = True
+print("True & True", True & True)
+# True & False = False
+print("True & False", True & False)
+# False & True = False
+print("False & True", False & True)
+# False & False = False
+print("False & False", False & False)
+
+# True | True = True
+print("True | True", True | True)
+# True | False = True
+print("True | False", True | False)
+# False | True = True
+print("False | True", False | True)
+# False | False = False
+print("False | False", False | False)
+
+# if (expresion1 devuelve True, False):
+#     codigo 1
+# elif (expresion2 devuelve True, False):
+#     codigo 2
+# elif (expresion2 devuelve True, False):
+#     codigo 3
+# elif (expresion2 devuelve True, False):
+#     codigo 4
+# else:
+#     codigo 5
+
+# if condicion: 
+
+### cuidado con el orden en esta caso nunca se va ejecutar
+##  print("duermes muy poco")
+##
+horas_suenio = 7
+if horas_suenio < 8:
+    print("duermes muy poco")
+elif horas_suenio < 4:
+    print("eres un vampiro")
+else:
+    print("Que envidia")
+    
+### para corregirlo puedes cambiar el orden
+horas_suenio = 7
+if horas_suenio < 4:
+    print("eres un vampiro")
+elif horas_suenio < 8:
+    print("duermes muy poco")
+else:
+    print("Que envidia")
