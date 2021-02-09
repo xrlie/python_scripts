@@ -74,7 +74,7 @@ sentimiento[:]
 # Ejercicio Palíndromo
 palindromo = "anita lava la tina"
 print(palindromo)
-print(palindromo[-1])
+print(palindromo[::-1])
 
 var_anecdota = "Hoy tuve mucho trabajo y estoy enfadado"
 print(var_anecdota[0::2]) 
