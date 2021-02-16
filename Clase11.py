@@ -56,7 +56,7 @@ class Transportes(object):
 
 class Terrestres(Transportes):
     def __init__(self, marca, dimensiones, capacidad, n_llantas, terreno):
-        super.__init__(marca, dimensiones, capacidad)
+        super().__init__(marca, dimensiones, capacidad)
         self.n_llantas = n_llantas
         self.terreno = terreno
     def desplazamiento(self):
@@ -71,7 +71,7 @@ class Terrestres(Transportes):
 
 class Autos(Terrestres):
     def __init__(self, marca, dimensiones, capacidad, n_llantas, terreno, a_c, inch_rin):
-        super.__init__(marca, dimensiones, capacidad, n_llantas, terreno)
+        super().__init__(marca, dimensiones, capacidad, n_llantas, terreno)
         self.a_c = a_c
         self.inch_rin = inch_rin
     def desplazamiento(self):
@@ -83,7 +83,7 @@ class Autos(Terrestres):
 
 class Motos(Terrestres):
     def __init__(self, marca, dimensiones, capacidad, n_llantas, terreno):
-        super.__init__(marca, dimensiones, capacidad, n_llantas, terreno)
+        super().__init__(marca, dimensiones, capacidad, n_llantas, terreno)
     def caballito(self):
         print('La moto está realizando un caballito')
     def rebasar(self):
