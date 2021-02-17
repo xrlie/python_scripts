@@ -89,7 +89,7 @@ except IndexError:
     print('El índice que utilizó no existe')
 
 #3
-colores = {'rojo': red, 'verde': green, 'negro': black}
+colores = {'rojo': 'red', 'verde': 'green', 'negro': 'black'}
 colores['blanco']
 
 #4
@@ -105,7 +105,7 @@ except ZeroDivisionError:
 else:
     x = x ** 2
 finally:
-    if error
+    if error == False :
         del x
     print('Siempre se ejecuta esto')
 
