@@ -40,3 +40,7 @@ mp.hola_mundo()
 
 from my_python import musica_favorita
 musica_favorita()
+
+
+### Ambientes virtuales
+# paquetes https://pypi.org/
