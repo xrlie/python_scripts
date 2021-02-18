@@ -22,8 +22,8 @@ import package_python as pkg_py   # cambiar nombre al paquete para escribirlo m�
 pkg_py.suma(13, 14)
 from package_python import suma   # importa únicamente las funciones que se utilizarán
 suma(13, 14)
-from package_python import *      # importa todo lo que esté dentro del paquete
-suma(13, 14)
+# from package_python import *      # importa todo lo que esté dentro del paquete
+# suma(13, 14)
 
 ### Ejercicio 8
 ### Crear el paquete, my_python, con las siguientes funciones:
